@@ -1,0 +1,2 @@
+[console_scripts]
+tiny-agent-trainer = tiny_agent_trainer.cli:main

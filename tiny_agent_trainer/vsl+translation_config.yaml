@@ -1,0 +1,30 @@
+task_name: "VSLTranslation"
+task_type: "vsl_translation"
+
+model:
+  architecture: "transformer"
+  d_model: 128
+  nhead: 4
+  num_layers: 2
+  dropout: 0.1
+
+training:
+  num_epochs: 200
+  batch_size: 16
+  learning_rate: 0.001
+  optimizer: "adamw"
+  early_stopping: true
+
+tokenizer:
+  type: "vsl"
+  max_length: 50
+  lowercase: false
+
+data:
+  corpus:
+    # We will add our paired statements here
+    - ["The man is a person.", "is(TheMan, Person)"]
+    - ["The cat is an animal.", "is(TheCat, Animal)"]
+    - ["All men are mortal.", "∀x:Person. is(x, Mortal)"]
+    - ["Some birds can fly.", "∃x:Bird. can_fly(x)"]
+    # ... add all your other pairs here

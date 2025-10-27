@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: tiny_agent_trainer
+Version: 2.0.0
+Summary: A lightweight framework for domain-specific AI agents.
+Author: Tiny Agent Trainer Team
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML
+Requires-Dist: torch
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: summary
+
+A lightweight framework for domain-specific AI agents.
